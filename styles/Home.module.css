@@ -1,0 +1,235 @@
+.container {
+  padding: 2rem;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.card:hover, .card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  outline: 3px solid #0070f3;
+  outline-offset: 4px;
+}
+
+.cardFlipped {
+  background-color: #f0f9ff;
+  border-color: #0070f3;
+}
+
+.wordJapanese {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.wordKana {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.answerArea {
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.wordChinese {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.wordEnglish {
+  font-style: italic;
+  color: #444;
+}
+
+.wordSource {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.hint {
+  color: #aaa;
+  margin-top: 1rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.feedbackGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  border: none;
+}
+
+.buttonForgot {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.buttonForgot:hover {
+  background-color: #fecaca;
+}
+
+.buttonRemember {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.buttonRemember:hover {
+  background-color: #bbf7d0;
+}
+
+.levelIndicator {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+
+.levelDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.levelDotActive {
+  background-color: #0070f3;
+}
+
+.masteredBadge {
+  background-color: #f0fdf4;
+  color: #166534;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #bbf7d0;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.buttonPrimary {
+  background-color: #333;
+  color: #fff;
+}
+
+.buttonPrimary:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+.buttonSecondary {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.buttonSecondary:hover {
+  background-color: #ebebeb;
+}
+
+.progress {
+  margin-top: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.adminSection {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px dashed #ddd;
+}
+
+.importPanel {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
+
+.importTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.importTextarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+.importActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.buttonSmall {
+  padding: 6px 16px;
+  font-size: 0.85rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
