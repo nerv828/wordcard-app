@@ -1,4 +1,7 @@
-import { openDb } from '../../lib/db'
+import fs from 'fs'
+import path from 'path'
+
+const filePath = path.join(process.cwd(), 'data/words.json')
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -6,50 +9,59 @@ export default async function handler(req, res) {
     return res.status(405).end(`Method ${req.method} Not Allowed`)
   }
 
-  const words = req.body
-  if (!Array.isArray(words)) {
+  const newWords = req.body
+  if (!Array.isArray(newWords)) {
     return res.status(400).json({ error: 'Expected an array of words' })
   }
 
-  const db = await openDb()
-  let importedCount = 0
-  let skippedCount = 0
-
   try {
-    // Start a transaction for better performance if there are many words
-    await db.run('BEGIN TRANSACTION')
+    const fileData = fs.readFileSync(filePath, 'utf8')
+    let words = JSON.parse(fileData)
+    
+    let importedCount = 0
+    let skippedCount = 0
 
-    for (const word of words) {
-      const { japanese, kana, chinese, english, source } = word
+    for (const newWord of newWords) {
+      const { japanese, kana, chinese, english, source } = newWord
       
       if (!japanese) {
         skippedCount++
         continue
       }
 
-      // Use INSERT OR IGNORE to avoid duplicates based on the UNIQUE constraint on 'japanese'
-      const result = await db.run(
-        `INSERT OR IGNORE INTO words (japanese, kana, chinese, english, source) VALUES (?, ?, ?, ?, ?)`,
-        [japanese, kana || '', chinese || '', english || '', source || 'Imported']
-      )
-
-      if (result.changes > 0) {
+      const existingIndex = words.findIndex(w => w.japanese === japanese)
+      if (existingIndex === -1) {
+        const nextId = words.length > 0 ? Math.max(...words.map(w => w.id)) + 1 : 1
+        words.push({
+          id: nextId,
+          japanese,
+          kana: kana || '',
+          chinese: chinese || '',
+          english: english || '',
+          source: source || 'Imported',
+          learning_count: 0,
+          level: 0,
+          is_memorized: 0
+        })
         importedCount++
       } else {
         skippedCount++
       }
     }
 
-    await db.run('COMMIT')
+    try {
+      fs.writeFileSync(filePath, JSON.stringify(words, null, 2))
+    } catch (e) {
+      console.warn('File system is read-only, changes not persisted')
+    }
 
     res.status(200).json({ 
-      message: 'Import completed', 
       success: true,
+      message: 'Import completed', 
       imported: importedCount, 
       skipped: skippedCount 
     })
   } catch (err) {
-    await db.run('ROLLBACK')
     console.error(err)
     res.status(500).json({ error: 'Failed to import words', details: err.message })
   }

@@ -1,1 +1,4 @@
 node_modules
+.next
+database.sqlite
+package-lock.json
