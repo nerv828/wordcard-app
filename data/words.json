@@ -218,5 +218,49 @@
     "learning_count": 0,
     "level": 0,
     "is_memorized": 0
+  },
+  {
+    "id": 21,
+    "japanese": "長ねぎ",
+    "kana": "ながねぎ",
+    "chinese": "大葱",
+    "english": "Long green onion",
+    "source": "Ito-Yokado (2026-03-14)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 22,
+    "japanese": "有機",
+    "kana": "ゆうき",
+    "chinese": "有机",
+    "english": "Organic",
+    "source": "Ito-Yokado (2026-03-14)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 23,
+    "japanese": "生姜",
+    "kana": "しょうが",
+    "chinese": "生姜",
+    "english": "Ginger",
+    "source": "Ito-Yokado (2026-03-14)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 24,
+    "japanese": "ピーマン",
+    "kana": "ピーマン",
+    "chinese": "青椒",
+    "english": "Green pepper",
+    "source": "Ito-Yokado (2026-03-14)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
   }
 ]
