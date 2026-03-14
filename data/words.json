@@ -152,5 +152,71 @@
     "learning_count": 0,
     "level": 0,
     "is_memorized": 0
+  },
+  {
+    "id": 15,
+    "japanese": "弁当",
+    "kana": "べんとう",
+    "chinese": "盒饭、便当",
+    "english": "Lunch box / Bento",
+    "source": "Maruetsu (2026-03-01)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 16,
+    "japanese": "牛乳",
+    "kana": "ぎゅうにゅう",
+    "chinese": "牛奶",
+    "english": "Milk",
+    "source": "Maruetsu (2026-03-01)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 17,
+    "japanese": "にんにく",
+    "kana": "にんにく",
+    "chinese": "大蒜",
+    "english": "Garlic",
+    "source": "Maruetsu (2026-03-01)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 18,
+    "japanese": "ごちそう",
+    "kana": "ごちそう",
+    "chinese": "美餐、款待",
+    "english": "Feast / Treat",
+    "source": "Maruetsu (2026-03-01)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 19,
+    "japanese": "生活",
+    "kana": "せいかつ",
+    "chinese": "生活",
+    "english": "Life",
+    "source": "Maruetsu (2026-03-01)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 20,
+    "japanese": "袋",
+    "kana": "ふくろ",
+    "chinese": "袋子",
+    "english": "Bag",
+    "source": "Maruetsu (2026-03-01)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
   }
 ]
