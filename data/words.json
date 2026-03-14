@@ -64,5 +64,93 @@
     "learning_count": 0,
     "level": 0,
     "is_memorized": 0
+  },
+  {
+    "id": 7,
+    "japanese": "マスタード",
+    "kana": "マスタード",
+    "chinese": "芥末",
+    "english": "Mustard",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 8,
+    "japanese": "豚",
+    "kana": "ぶた",
+    "chinese": "猪、猪肉",
+    "english": "Pork",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 9,
+    "japanese": "軟骨",
+    "kana": "なんこつ",
+    "chinese": "软骨",
+    "english": "Cartilage",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 10,
+    "japanese": "国産",
+    "kana": "こくさん",
+    "chinese": "国产",
+    "english": "Domestic",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 11,
+    "japanese": "若鶏",
+    "kana": "わかどり",
+    "chinese": "嫩鸡、童子鸡",
+    "english": "Young Chicken",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 12,
+    "japanese": "手羽元",
+    "kana": "てばもと",
+    "chinese": "鸡翅根",
+    "english": "Chicken Wing Stick / Drumette",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 13,
+    "japanese": "えだ豆",
+    "kana": "えだまめ",
+    "chinese": "毛豆",
+    "english": "Edamame / Green Soybeans",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 14,
+    "japanese": "値引",
+    "kana": "ねびき",
+    "chinese": "打折、降价",
+    "english": "Discount",
+    "source": "Ito-Yokado (2026-03-04)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
   }
 ]
