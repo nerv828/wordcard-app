@@ -88,17 +88,6 @@
     "is_memorized": 0
   },
   {
-    "id": 9,
-    "japanese": "軟骨",
-    "kana": "なんこつ",
-    "chinese": "软骨",
-    "english": "Cartilage",
-    "source": "Ito-Yokado (2026-03-04)",
-    "learning_count": 0,
-    "level": 0,
-    "is_memorized": 0
-  },
-  {
     "id": 10,
     "japanese": "国産",
     "kana": "こくさん",
@@ -232,7 +221,7 @@
   },
   {
     "id": 22,
-    "japanese": "有機",
+    "japanese": "有机",
     "kana": "ゆうき",
     "chinese": "有机",
     "english": "Organic",
@@ -259,6 +248,17 @@
     "chinese": "青椒",
     "english": "Green pepper",
     "source": "Ito-Yokado (2026-03-14)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 25,
+    "japanese": "まごころ",
+    "kana": "まごころ",
+    "chinese": "诚心、真心",
+    "english": "Sincerity / Devotion",
+    "source": "Ito-Yokado (2026-03-16)",
     "learning_count": 0,
     "level": 0,
     "is_memorized": 0
