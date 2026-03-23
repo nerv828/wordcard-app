@@ -529,7 +529,7 @@
   },
   {
     "id": 49,
-    "japanese": "牧場",
+    "japanese": "牧场",
     "kana": "まきば",
     "chinese": "牧场",
     "english": "Ranch / Farm",
@@ -567,6 +567,50 @@
     "chinese": "美味的",
     "english": "Delicious",
     "source": "General Food Term",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 53,
+    "japanese": "ハツ",
+    "kana": "ハツ",
+    "chinese": "猪心、心脏",
+    "english": "Heart / Pork Heart",
+    "source": "Maruetsu (2026-03-17)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 54,
+    "japanese": "キャベツ",
+    "kana": "キャベツ",
+    "chinese": "卷心菜",
+    "english": "Cabbage",
+    "source": "Ito-Yokado (2026-03-17)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 55,
+    "japanese": "もやし",
+    "kana": "もやし",
+    "chinese": "豆芽",
+    "english": "Bean Sprouts",
+    "source": "Ito-Yokado (2026-03-17)",
+    "learning_count": 0,
+    "level": 0,
+    "is_memorized": 0
+  },
+  {
+    "id": 56,
+    "japanese": "火",
+    "kana": "かようび",
+    "chinese": "周二",
+    "english": "Tuesday",
+    "source": "Receipt (2026-03-17)",
     "learning_count": 0,
     "level": 0,
     "is_memorized": 0
